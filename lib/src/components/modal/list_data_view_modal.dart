@@ -193,7 +193,7 @@ class _ListDataViewModalState extends State<ListDataViewModal> {
         globalSettings: widget.globalSettings,
       );
 
-  Widget _categoryItemModal(SingleItemCategoryModel i) => CategoryItemModal(
+  Widget _categoryItemModal(Choice i) => CategoryItemModal(
         singleItemCategory: i,
         selectDataController: widget.selectDataController,
         categoryItemModalBuilder: widget.categoryItemModalBuilder,

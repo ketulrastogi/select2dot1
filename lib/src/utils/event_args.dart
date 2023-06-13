@@ -119,7 +119,7 @@ class PillboxContentMultiDetails {
   final void Function() onFocusChange;
 
   /// This is a function returning a [Widget] of the the chip of the pillbox.
-  final Widget Function(SingleItemCategoryModel singleItemCategory) selectChip;
+  final Widget Function(Choice singleItemCategory) selectChip;
 
   /// This is a function returning a [Widget] of the empty info of the pillbox.
   final Widget Function() selectEmptyInfo;
@@ -250,8 +250,8 @@ typedef SelectChipBuilder = Widget Function(
 
 /// This is a class which contains necessary details to build your own select chip of the pillbox.
 class SelectChipDetails {
-  /// This is a [SingleItemCategoryModel] that will be used to build the select chip of the pillbox.
-  final SingleItemCategoryModel singleItemCategory;
+  /// This is a [Choice] that will be used to build the select chip of the pillbox.
+  final Choice singleItemCategory;
 
   /// This is a [SelectDataController] that will be used to control the selection of the category item and get data from it.
   final SelectDataController selectDataController;
@@ -279,8 +279,8 @@ typedef SelectSingleBuilder = Widget Function(
 
 /// This is a class which contains necessary details to build your own select single of the pillbox.
 class SelectSingleDetails {
-  /// This is a [SingleItemCategoryModel] that will be used to build the select single of the pillbox.
-  final SingleItemCategoryModel singleItemCategory;
+  /// This is a [Choice] that will be used to build the select single of the pillbox.
+  final Choice singleItemCategory;
 
   /// This is a [SelectDataController] that will be used to control the selection of the category item and get data from it.
   final SelectDataController selectDataController;
@@ -478,8 +478,7 @@ class ListDataViewOverlayDetails {
   final Widget Function(SingleCategoryModel singleCategory) categoryNameOverlay;
 
   /// This is a function returning a [Widget] of the categoryItemOverlay.
-  final Widget Function(SingleItemCategoryModel singleItemCategory)
-      categoryItemOverlay;
+  final Widget Function(Choice singleItemCategory) categoryItemOverlay;
 
   /// This is a function returning a [Widget] of the search empty info modal.
   final Widget Function() searchEmptyInfoOverlay;
@@ -515,8 +514,8 @@ typedef CategoryItemOverlayBuilder = Widget Function(
 
 /// This is a class which contains necessary details to build your own category item.
 class CategoryItemOverlayDetails {
-  /// This is a [SingleItemCategoryModel] that will be used to build the category item.
-  final SingleItemCategoryModel singleItemCategory;
+  /// This is a [Choice] that will be used to build the category item.
+  final Choice singleItemCategory;
 
   /// This is a [SelectDataController] that will be used to control the selection of the category item and get data from it.
   final SelectDataController selectDataController;
@@ -771,8 +770,7 @@ class ListDataViewModalDetails {
   final Widget Function(SingleCategoryModel singleCategory) categoryNameModal;
 
   /// This is a function returning a [Widget] of the CategoryItemModal.
-  final Widget Function(SingleItemCategoryModel singleItemCategory)
-      categoryItemModal;
+  final Widget Function(Choice singleItemCategory) categoryItemModal;
 
   /// This is a function returning a [Widget] of the search empty info modal.
   final Widget Function() searchEmptyInfoModal;
@@ -841,8 +839,8 @@ typedef CategoryItemModalBuilder = Widget Function(
 
 /// This is a class which contains necessary details to build your own category item modal.
 class CategoryItemModalDetails {
-  /// This is a [SingleItemCategoryModel] that will be used to build the category item modal.
-  final SingleItemCategoryModel singleItemCategory;
+  /// This is a [Choice] that will be used to build the category item modal.
+  final Choice singleItemCategory;
 
   /// This is a [SelectDataController] that will be used to control the selection of the category item and get data from it.
   final SelectDataController selectDataController;

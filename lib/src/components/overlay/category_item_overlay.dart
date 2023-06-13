@@ -6,7 +6,7 @@ import 'package:select2dot1/src/settings/overlay/category_item_overlay_settings.
 import 'package:select2dot1/src/utils/event_args.dart';
 
 class CategoryItemOverlay extends StatefulWidget {
-  final SingleItemCategoryModel singleItemCategory;
+  final Choice singleItemCategory;
   final SelectDataController selectDataController;
   final void Function() overlayHide;
   final CategoryItemOverlayBuilder? categoryItemOverlayBuilder;
@@ -113,7 +113,7 @@ class _CategoryItemOverlayState extends State<CategoryItemOverlay> {
                       Container(
                         padding: widget.categoryItemOverlaySettings.textPadding,
                         child: Text(
-                          widget.singleItemCategory.nameSingleItem,
+                          widget.singleItemCategory.text,
                           overflow:
                               widget.categoryItemOverlaySettings.textOverflow,
                           style: _getNameItemTextStyle(),

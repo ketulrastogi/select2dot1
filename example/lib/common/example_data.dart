@@ -6,8 +6,8 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Team Leader',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'David Eubanks',
+        Choice(
+          text: 'David Eubanks',
           extraInfoSingleItem: 'Full time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.transparent,
@@ -15,8 +15,8 @@ class ExampleData {
             backgroundImage: AssetImage('assets/images/avatar1.jpg'),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Stuart Resch',
+        Choice(
+          text: 'Stuart Resch',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.blue,
@@ -28,8 +28,8 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Programmer',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'David Eubanks',
+        Choice(
+          text: 'David Eubanks',
           extraInfoSingleItem: 'Full time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.transparent,
@@ -37,8 +37,8 @@ class ExampleData {
             backgroundImage: AssetImage('assets/images/avatar1.jpg'),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Manuel Eyre',
+        Choice(
+          text: 'Manuel Eyre',
           extraInfoSingleItem: 'Full time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.transparent,
@@ -46,8 +46,8 @@ class ExampleData {
             backgroundImage: AssetImage('assets/images/avatar2.jpg'),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Robert Keller',
+        Choice(
+          text: 'Robert Keller',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.brown,
@@ -59,24 +59,24 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'UX Designer',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Shirley Stark',
+        Choice(
+          text: 'Shirley Stark',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.purple,
             child: Text('SS', style: TextStyle(color: Colors.white)),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Wendy Cangelosi',
+        Choice(
+          text: 'Wendy Cangelosi',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.green,
             child: Text('WC', style: TextStyle(color: Colors.white)),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Antoinette Herbert',
+        Choice(
+          text: 'Antoinette Herbert',
           extraInfoSingleItem: 'Full time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.orange,
@@ -91,12 +91,12 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Alaskan/Hawaiian Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Alaska',
+        Choice(
+          text: 'Alaska',
           extraInfoSingleItem: '1395 Lincoln Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Hawaii',
+        Choice(
+          text: 'Hawaii',
           extraInfoSingleItem: '4880 Michigan Avenue',
         ),
       ],
@@ -104,20 +104,20 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Pacific Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'California',
+        Choice(
+          text: 'California',
           extraInfoSingleItem: '3878 Chapel Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Nevada',
+        Choice(
+          text: 'Nevada',
           extraInfoSingleItem: '4045 Lucy Lane',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Oregon',
+        Choice(
+          text: 'Oregon',
           extraInfoSingleItem: '83 Kenwood Place',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Washington',
+        Choice(
+          text: 'Washington',
           extraInfoSingleItem: '3573 Pallet Street',
         ),
       ],
@@ -125,40 +125,40 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Mountain Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Arizona',
+        Choice(
+          text: 'Arizona',
           extraInfoSingleItem: '4473 Prospect Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Colorado',
+        Choice(
+          text: 'Colorado',
           extraInfoSingleItem: '2247 Nuzum Court',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Idaho',
+        Choice(
+          text: 'Idaho',
           extraInfoSingleItem: '1182 Bailey Drive',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Montana',
+        Choice(
+          text: 'Montana',
           extraInfoSingleItem: '4530 Elk City Road',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Nebraska',
+        Choice(
+          text: 'Nebraska',
           extraInfoSingleItem: '2012 Armbrester Drive',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'New Mexico',
+        Choice(
+          text: 'New Mexico',
           extraInfoSingleItem: '2393 Wines Lane',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'North Dakota',
+        Choice(
+          text: 'North Dakota',
           extraInfoSingleItem: '4190 Don Jackson Lane',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Utah',
+        Choice(
+          text: 'Utah',
           extraInfoSingleItem: '468 Green Acres Road',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Wyoming',
+        Choice(
+          text: 'Wyoming',
           extraInfoSingleItem: '1898 Sardis Sta',
         ),
       ],
@@ -166,60 +166,60 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Central Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Alabama',
+        Choice(
+          text: 'Alabama',
           extraInfoSingleItem: '4446 Jarvisville Road',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Arkansas',
+        Choice(
+          text: 'Arkansas',
           extraInfoSingleItem: '4111 Little Acres Lane',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Illonois',
+        Choice(
+          text: 'Illonois',
           extraInfoSingleItem: '3444 Clark Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Iowa',
+        Choice(
+          text: 'Iowa',
           extraInfoSingleItem: '4610 Lucy Lane',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Kansas',
+        Choice(
+          text: 'Kansas',
           extraInfoSingleItem: '323 Stratford Drive',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Kentucky',
+        Choice(
+          text: 'Kentucky',
           extraInfoSingleItem: '3631 Vine Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Louisiana',
+        Choice(
+          text: 'Louisiana',
           extraInfoSingleItem: '3283 Godfrey Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Minnesota',
+        Choice(
+          text: 'Minnesota',
           extraInfoSingleItem: '4838 Ridenour Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Mississippi',
+        Choice(
+          text: 'Mississippi',
           extraInfoSingleItem: '38 Ray Court',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Missouri',
+        Choice(
+          text: 'Missouri',
           extraInfoSingleItem: '1360 Bingamon Road',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Oklahoma',
+        Choice(
+          text: 'Oklahoma',
           extraInfoSingleItem: '1636 Sundown Lane',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'South Dakota',
+        Choice(
+          text: 'South Dakota',
           extraInfoSingleItem: '1091 Elm Drive',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Texas',
+        Choice(
+          text: 'Texas',
           extraInfoSingleItem: '4764 Bond Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Tennessee',
+        Choice(
+          text: 'Tennessee',
           extraInfoSingleItem: '4540 Oakmound Road',
         ),
       ],
@@ -227,28 +227,28 @@ class ExampleData {
     SingleCategoryModel(
       nameCategory: 'Eastern Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Connecticut',
+        Choice(
+          text: 'Connecticut',
           extraInfoSingleItem: '695 Center Avenue',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Massechusetts',
+        Choice(
+          text: 'Massechusetts',
           extraInfoSingleItem: '2085 Heron Way',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'North Carolina',
+        Choice(
+          text: 'North Carolina',
           extraInfoSingleItem: '1034 Conference Center Way',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'South Carolina',
+        Choice(
+          text: 'South Carolina',
           extraInfoSingleItem: '3865 Hickory Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Vermont',
+        Choice(
+          text: 'Vermont',
           extraInfoSingleItem: '3159 Sumner Street',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'West Virginia',
+        Choice(
+          text: 'West Virginia',
           extraInfoSingleItem: '2506 Hall Street',
         ),
       ],
@@ -258,21 +258,21 @@ class ExampleData {
   static const List<SingleCategoryModel> exampleData3 = [
     SingleCategoryModel(
       singleItemCategoryList: [
-        SingleItemCategoryModel(nameSingleItem: 'Alabama', value: 'Alabama1'),
-        SingleItemCategoryModel(nameSingleItem: 'Alabama', value: 'Alabama2'),
-        SingleItemCategoryModel(nameSingleItem: 'Arkansas'),
-        SingleItemCategoryModel(nameSingleItem: 'Illonois'),
-        SingleItemCategoryModel(nameSingleItem: 'Iowa'),
-        SingleItemCategoryModel(nameSingleItem: 'Kansas'),
-        SingleItemCategoryModel(nameSingleItem: 'Kentucky'),
-        SingleItemCategoryModel(nameSingleItem: 'Louisiana'),
-        SingleItemCategoryModel(nameSingleItem: 'Minnesota'),
-        SingleItemCategoryModel(nameSingleItem: 'Mississippi'),
-        SingleItemCategoryModel(nameSingleItem: 'Missouri'),
-        SingleItemCategoryModel(nameSingleItem: 'Oklahoma'),
-        SingleItemCategoryModel(nameSingleItem: 'South Dakota'),
-        SingleItemCategoryModel(nameSingleItem: 'Texas'),
-        SingleItemCategoryModel(nameSingleItem: 'Tennessee'),
+        Choice(text: 'Alabama', value: 'Alabama1'),
+        Choice(text: 'Alabama', value: 'Alabama2'),
+        Choice(text: 'Arkansas'),
+        Choice(text: 'Illonois'),
+        Choice(text: 'Iowa'),
+        Choice(text: 'Kansas'),
+        Choice(text: 'Kentucky'),
+        Choice(text: 'Louisiana'),
+        Choice(text: 'Minnesota'),
+        Choice(text: 'Mississippi'),
+        Choice(text: 'Missouri'),
+        Choice(text: 'Oklahoma'),
+        Choice(text: 'South Dakota'),
+        Choice(text: 'Texas'),
+        Choice(text: 'Tennessee'),
       ],
     ),
   ];
@@ -280,20 +280,20 @@ class ExampleData {
   static const List<SingleCategoryModel> exampleData4 = [
     SingleCategoryModel(
       singleItemCategoryList: [
-        SingleItemCategoryModel(nameSingleItem: 'Alabama'),
-        SingleItemCategoryModel(nameSingleItem: 'Arkansas'),
-        SingleItemCategoryModel(nameSingleItem: 'Illonois'),
-        SingleItemCategoryModel(nameSingleItem: 'Iowa'),
-        SingleItemCategoryModel(nameSingleItem: 'Kansas'),
-        SingleItemCategoryModel(nameSingleItem: 'Kentucky'),
-        SingleItemCategoryModel(nameSingleItem: 'Louisiana'),
-        SingleItemCategoryModel(nameSingleItem: 'Minnesota'),
-        SingleItemCategoryModel(nameSingleItem: 'Mississippi'),
-        SingleItemCategoryModel(nameSingleItem: 'Missouri'),
-        SingleItemCategoryModel(nameSingleItem: 'Oklahoma'),
-        SingleItemCategoryModel(nameSingleItem: 'South Dakota'),
-        SingleItemCategoryModel(nameSingleItem: 'Texas'),
-        SingleItemCategoryModel(nameSingleItem: 'Tennessee'),
+        Choice(text: 'Alabama'),
+        Choice(text: 'Arkansas'),
+        Choice(text: 'Illonois'),
+        Choice(text: 'Iowa'),
+        Choice(text: 'Kansas'),
+        Choice(text: 'Kentucky'),
+        Choice(text: 'Louisiana'),
+        Choice(text: 'Minnesota'),
+        Choice(text: 'Mississippi'),
+        Choice(text: 'Missouri'),
+        Choice(text: 'Oklahoma'),
+        Choice(text: 'South Dakota'),
+        Choice(text: 'Texas'),
+        Choice(text: 'Tennessee'),
       ],
     ),
   ];

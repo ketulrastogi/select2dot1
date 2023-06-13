@@ -18,9 +18,7 @@ class BasicExample3 extends StatelessWidget {
             selectDataController: SelectDataController(
               data: ExampleData.exampleData1,
               isMultiSelect: false,
-              initSelected: const [
-                SingleItemCategoryModel(nameSingleItem: 'Manuel Eyre')
-              ],
+              initSelected: const [Choice(text: 'Manuel Eyre')],
             ),
             isSearchable: false,
             selectSingleSettings:

@@ -15,10 +15,10 @@ class SelectDataController extends ChangeNotifier {
   /// This is initial selected data.
   /// This data will be add to the [selectedList] when the class is created.
   /// If [isMultiSelect] is false, must be null or length <= 1.
-  final List<SingleItemCategoryModel>? initSelected;
+  final List<Choice>? initSelected;
 
-  /// This is a list of [SingleItemCategoryModel] selected items.
-  final List<SingleItemCategoryModel> selectedList = [];
+  /// This is a list of [Choice] selected items.
+  final List<Choice> selectedList = [];
 
   /// SelectDataController is a class that will be used to control select data.
   /// Use this constructor to create a [SelectDataController] object.
@@ -48,9 +48,9 @@ class SelectDataController extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Add items from list of [SingleItemCategoryModel] to the [selectedList],
+  /// Add items from list of [Choice] to the [selectedList],
   /// when items are in the [data] and not in the [selectedList].
-  void addGroupSelectChip(List<SingleItemCategoryModel>? singleItemList) {
+  void addGroupSelectChip(List<Choice>? singleItemList) {
     if (singleItemList == null) {
       return;
     }
@@ -65,9 +65,9 @@ class SelectDataController extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Remove items from list of [SingleItemCategoryModel] to the [selectedList],
+  /// Remove items from list of [Choice] to the [selectedList],
   /// when items are in the [data] and not in the [selectedList].
-  void removeGroupSelectChip(List<SingleItemCategoryModel>? singleItemList) {
+  void removeGroupSelectChip(List<Choice>? singleItemList) {
     if (singleItemList == null) {
       return;
     }
@@ -78,9 +78,9 @@ class SelectDataController extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Add single [SingleItemCategoryModel] to the [selectedList],
+  /// Add single [Choice] to the [selectedList],
   /// when items are in the [data] and not in the [selectedList].
-  void addSelectChip(SingleItemCategoryModel? singleItem) {
+  void addSelectChip(Choice? singleItem) {
     if (singleItem == null) {
       return;
     }
@@ -91,9 +91,9 @@ class SelectDataController extends ChangeNotifier {
     }
   }
 
-  /// Remove single [SingleItemCategoryModel] from the [selectedList],
+  /// Remove single [Choice] from the [selectedList],
   /// when items are in the [data] and not in the [selectedList].
-  void removeSingleSelectedChip(SingleItemCategoryModel? singleItem) {
+  void removeSingleSelectedChip(Choice? singleItem) {
     if (singleItem == null) {
       return;
     }
@@ -106,9 +106,9 @@ class SelectDataController extends ChangeNotifier {
     }
   }
 
-  /// Set single [SingleItemCategoryModel] to the [selectedList],
+  /// Set single [Choice] to the [selectedList],
   /// when items are in the [data] and not in the [selectedList].
-  void setSingleSelect(SingleItemCategoryModel? singleItem) {
+  void setSingleSelect(Choice? singleItem) {
     if (singleItem == null) {
       return;
     }
@@ -118,8 +118,8 @@ class SelectDataController extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Check if the [SingleItemCategoryModel] is in the [selectedList].
-  bool _singleItemContainsInSelected(SingleItemCategoryModel? singleItem) {
+  /// Check if the [Choice] is in the [selectedList].
+  bool _singleItemContainsInSelected(Choice? singleItem) {
     if (singleItem == null) {
       return false;
     }
@@ -127,8 +127,8 @@ class SelectDataController extends ChangeNotifier {
     return selectedList.contains(singleItem);
   }
 
-  SingleItemCategoryModel getSingleItemCategoryFromData(
-    SingleItemCategoryModel patternSingleItem,
+  Choice getSingleItemCategoryFromData(
+    Choice patternSingleItem,
   ) {
     return data
         .firstWhere(

@@ -50,8 +50,8 @@ import 'package:select2dot1/src/utils/event_args.dart';
 ///     SingleCategoryModel(
 ///       nameCategory: 'Team Leader',
 ///       singleItemCategoryList: [
-///         SingleItemCategoryModel(
-///           nameSingleItem: 'David Eubanks',
+///         Choice(
+///           text: 'David Eubanks',
 ///           extraInfoSingleItem: 'Full time',
 ///           avatarSingleItem: CircleAvatar(
 ///             backgroundColor: Colors.transparent,
@@ -59,8 +59,8 @@ import 'package:select2dot1/src/utils/event_args.dart';
 ///             backgroundImage: AssetImage('assets/images/avatar1.jpg'),
 ///           ),
 ///         ),
-///         SingleItemCategoryModel(
-///           nameSingleItem: 'Stuart Resch',
+///         Choice(
+///           text: 'Stuart Resch',
 ///           extraInfoSingleItem: 'Part time',
 ///           avatarSingleItem: CircleAvatar(
 ///             backgroundColor: Colors.blue,
@@ -87,7 +87,7 @@ class Select2dot1 extends StatefulWidget {
 
   /// Used this to get the value of the widget outside the widget.
   /// It is call every time when the value of the widget is changed.
-  final ValueChanged<List<SingleItemCategoryModel>>? onChanged;
+  final ValueChanged<List<Choice>>? onChanged;
 
   /// Pass it if you want adjustable dropdown anchor.
   final ScrollController? scrollController;

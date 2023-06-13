@@ -6,7 +6,7 @@ import 'package:select2dot1/src/settings/modal/category_item_modal_settings.dart
 import 'package:select2dot1/src/utils/event_args.dart';
 
 class CategoryItemModal extends StatefulWidget {
-  final SingleItemCategoryModel singleItemCategory;
+  final Choice singleItemCategory;
   final SelectDataController selectDataController;
   final CategoryItemModalBuilder? categoryItemModalBuilder;
   final CategoryItemModalSettings categoryItemModalSettings;
@@ -107,7 +107,7 @@ class _CategoryItemModalState extends State<CategoryItemModal> {
                     Container(
                       padding: widget.categoryItemModalSettings.textPadding,
                       child: Text(
-                        widget.singleItemCategory.nameSingleItem,
+                        widget.singleItemCategory.text,
                         overflow: widget.categoryItemModalSettings.textOverflow,
                         style: _getNameItemTextStyle(),
                       ),

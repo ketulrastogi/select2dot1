@@ -37,10 +37,10 @@ class SearchControllerSelect2dot1 extends ChangeNotifier {
     _results.clear();
 
     for (var category in _data) {
-      List<SingleItemCategoryModel> tempSingleItemCategoryList = [];
+      List<Choice> tempSingleItemCategoryList = [];
 
       for (var singleItemCategory in category.singleItemCategoryList) {
-        if (singleItemCategory.nameSingleItem
+        if (singleItemCategory.text
             .toLowerCase()
             .startsWith(value.toLowerCase())) {
           tempSingleItemCategoryList.add(singleItemCategory);

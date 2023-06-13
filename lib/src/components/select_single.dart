@@ -6,7 +6,7 @@ import 'package:select2dot1/src/settings/select_single_settings.dart';
 import 'package:select2dot1/src/utils/event_args.dart';
 
 class SelectSingle extends StatelessWidget {
-  final SingleItemCategoryModel singleItemCategory;
+  final Choice singleItemCategory;
   final SelectDataController selectDataController;
   final SelectSingleBuilder? selectSingleBuilder;
   final SelectSingleSettings selectSingleSettings;
@@ -56,7 +56,7 @@ class SelectSingle extends StatelessWidget {
                 Container(
                   padding: selectSingleSettings.textPadding,
                   child: Text(
-                    singleItemCategory.nameSingleItem,
+                    singleItemCategory.text,
                     overflow: selectSingleSettings.textOverflow,
                     style: _getTextStyle(),
                   ),

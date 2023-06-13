@@ -18,11 +18,11 @@ class BasicExample7 extends StatelessWidget {
             selectDataController: SelectDataController(
               data: ExampleData.exampleData2,
               initSelected: const [
-                SingleItemCategoryModel(nameSingleItem: 'Alaska'),
-                SingleItemCategoryModel(nameSingleItem: 'California'),
-                SingleItemCategoryModel(nameSingleItem: 'Hawaii'),
-                SingleItemCategoryModel(nameSingleItem: 'Arizona'),
-                SingleItemCategoryModel(nameSingleItem: 'Colorado'),
+                Choice(text: 'Alaska'),
+                Choice(text: 'California'),
+                Choice(text: 'Hawaii'),
+                Choice(text: 'Arizona'),
+                Choice(text: 'Colorado'),
               ],
             ),
             pillboxContentMultiSettings:

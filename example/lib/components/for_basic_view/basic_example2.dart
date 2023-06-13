@@ -18,9 +18,7 @@ class BasicExample2 extends StatelessWidget {
             selectDataController: SelectDataController(
               data: ExampleData.exampleData1,
               isMultiSelect: false,
-              initSelected: const [
-                SingleItemCategoryModel(nameSingleItem: 'David Eubanks')
-              ],
+              initSelected: const [Choice(text: 'David Eubanks')],
             ),
             scrollController: scrollController,
             pillboxTitleSettings:

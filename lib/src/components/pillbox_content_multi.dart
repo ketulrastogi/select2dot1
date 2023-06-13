@@ -238,7 +238,7 @@ class _PillboxContentMultiState extends State<PillboxContentMulti> {
     }
   }
 
-  Widget _selectChip(SingleItemCategoryModel i) => SelectChip(
+  Widget _selectChip(Choice i) => SelectChip(
         singleItemCategory: i,
         selectDataController: widget.selectDataController,
         selectChipBuilder: widget.selectChipBuilder,

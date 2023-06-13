@@ -232,7 +232,7 @@ class _ListDataViewOverlayState extends State<ListDataViewOverlay> {
         globalSettings: widget.globalSettings,
       );
 
-  Widget _categoryItemOverlay(SingleItemCategoryModel i) => CategoryItemOverlay(
+  Widget _categoryItemOverlay(Choice i) => CategoryItemOverlay(
         singleItemCategory: i,
         selectDataController: widget.selectDataController,
         overlayHide: widget.overlayHide,

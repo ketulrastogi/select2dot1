@@ -95,8 +95,8 @@ static const List<SingleCategoryModel> exampleData = [
     SingleCategoryModel(
       nameCategory: 'Team Leader',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'David Eubanks',
+        Choice(
+          text: 'David Eubanks',
           extraInfoSingleItem: 'Full time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.transparent,
@@ -104,8 +104,8 @@ static const List<SingleCategoryModel> exampleData = [
             backgroundImage: AssetImage('assets/images/avatar1.jpg'),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Stuart Resch',
+        Choice(
+          text: 'Stuart Resch',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.blue,
@@ -368,7 +368,7 @@ Select2dot1(
               children: [
                 Flexible(
                   child: Text(
-                    selectChipDetails.singleItemCategory.getNameSingleItem,
+                    selectChipDetails.singleItemCategory.gettext,
                     softWrap: false,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(color: Colors.white),
@@ -442,28 +442,28 @@ To use Select2dot1 widget you have to pass data to SelectDataController. Data mu
 The SingleCategoryModel is a model which contains data about single category.
 Parameters:
 * nameCategory - name of category (It is optional if you don't want to show group select)
-* singleItemCategoryList - list of SingleItemCategoryModel (It is required)
+* singleItemCategoryList - list of Choice (It is required)
 
 
-SingleItemCategoryModel is a model which contains data about single item in category.
+Choice is a model which contains data about single item in category.
 Parameters:
-* nameSingleItem - visible name of single item (It is required)
-* [value](#value-parametr-in-singleitemcategorymodel) - value of single item (It is optional)
+* text - visible name of single item (It is required)
+* [value](#value-parametr-in-Choice) - value of single item (It is optional)
 * extraInfoSingleItem - extra info about single item (It is optional)
 * avatarSingleItem - avatar of single item (It is optional)
 
-### Value parametr in SingleItemCategoryModel
+### Value parametr in Choice
 
-It's used to get the specific id of a single item. It's necessary when you want to distinguish between single items with the same nameSingleItem.
+It's used to get the specific id of a single item. It's necessary when you want to distinguish between single items with the same text.
 
 ```dart
 static const List<SingleCategoryModel> exampleData = [
   SingleCategoryModel(
     singleItemCategoryList: [
-      SingleItemCategoryModel(nameSingleItem: 'Alabama', value: 'Alabama1'),
-      SingleItemCategoryModel(nameSingleItem: 'Alabama', value: 'Alabama2'),
-      SingleItemCategoryModel(nameSingleItem: 'Arkansas'),
-      SingleItemCategoryModel(nameSingleItem: 'Illonois'),
+      Choice(text: 'Alabama', value: 'Alabama1'),
+      Choice(text: 'Alabama', value: 'Alabama2'),
+      Choice(text: 'Arkansas'),
+      Choice(text: 'Illonois'),
     ],
   ),
 ];
@@ -476,8 +476,8 @@ static const List<SingleCategoryModel> exampleData = [
     SingleCategoryModel(
       nameCategory: 'Team Leader',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'David Eubanks',
+        Choice(
+          text: 'David Eubanks',
           extraInfoSingleItem: 'Full time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.transparent,
@@ -485,8 +485,8 @@ static const List<SingleCategoryModel> exampleData = [
             backgroundImage: AssetImage('assets/images/avatar1.jpg'),
           ),
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Stuart Resch',
+        Choice(
+          text: 'Stuart Resch',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.blue,
@@ -498,12 +498,12 @@ static const List<SingleCategoryModel> exampleData = [
     SingleCategoryModel(
       nameCategory: 'UX Designer',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Jan Foxstein',
+        Choice(
+          text: 'Jan Foxstein',
           extraInfoSingleItem: 'Full time',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'Jhony Steward',
+        Choice(
+          text: 'Jhony Steward',
           extraInfoSingleItem: 'Part time',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.blue,
@@ -552,8 +552,8 @@ Select2dot1(
       data: exampleData, 
       isMultiple: false, 
       initialSelectedData: [ // Remember that when isMultiple is false, you can add only one position to initialSelectedData.
-        SingleItemCategoryModel(
-          nameSingleItem: 'Stuart Resch',
+        Choice(
+          text: 'Stuart Resch',
           value: 'Stuart Resch 1', 
         ),
       ],
@@ -608,11 +608,11 @@ Select2dot1(
 Select2dot1(
     selectDataController: SelectDataController(data: exampleData, 
     initialSelectedData: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Alabama',
+        Choice(
+          text: 'Alabama',
         ),
-        SingleItemCategoryModel(
-          nameSingleItem: 'California',
+        Choice(
+          text: 'California',
         ),
       ],
     ),
@@ -632,9 +632,9 @@ static const List<SingleCategoryModel> exampleData3 = [
   SingleCategoryModel(
     nameCategory: null, // If you dont want to group select, you dont need to use name parameter in SingleCategoryModel or set it to null.
     singleItemCategoryList: [
-      SingleItemCategoryModel(nameSingleItem: 'Alabama',),
-      SingleItemCategoryModel(nameSingleItem: 'Arkansas'),
-      SingleItemCategoryModel(nameSingleItem: 'Illonois'),
+      Choice(text: 'Alabama',),
+      Choice(text: 'Arkansas'),
+      Choice(text: 'Illonois'),
     ],
   ),
 ];

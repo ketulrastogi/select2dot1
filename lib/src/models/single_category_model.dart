@@ -8,7 +8,7 @@ class SingleCategoryModel {
 
   /// The list of items in the single category.
   /// It is required.
-  final List<SingleItemCategoryModel> singleItemCategoryList;
+  final List<Choice> singleItemCategoryList;
 
   @override
   int get hashCode => nameCategory.hashCode ^ singleItemCategoryList.hashCode;

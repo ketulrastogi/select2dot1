@@ -6,7 +6,7 @@ import 'package:select2dot1/src/settings/select_chip_settings.dart';
 import 'package:select2dot1/src/utils/event_args.dart';
 
 class SelectChip extends StatelessWidget {
-  final SingleItemCategoryModel singleItemCategory;
+  final Choice singleItemCategory;
   final SelectDataController selectDataController;
   final SelectChipBuilder? selectChipBuilder;
   final SelectChipSettings selectChipSettings;
@@ -57,7 +57,7 @@ class SelectChip extends StatelessWidget {
                 constraints: selectChipSettings.textBoxConstraints,
                 padding: selectChipSettings.textPadding,
                 child: Text(
-                  singleItemCategory.nameSingleItem,
+                  singleItemCategory.text,
                   overflow: selectChipSettings.textOverflow,
                   style: _getChipTextStyle(),
                 ),

@@ -107,7 +107,7 @@ class CustomSelect2dot1 extends StatelessWidget {
               children: [
                 Flexible(
                   child: Text(
-                    selectChipDetails.singleItemCategory.nameSingleItem,
+                    selectChipDetails.singleItemCategory.text,
                     softWrap: false,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(color: Colors.white),

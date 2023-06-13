@@ -26,24 +26,24 @@ class _SimpleExampleAppState extends State<SimpleExampleApp> {
     SingleCategoryModel(
       nameCategory: 'Central Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(
-          nameSingleItem: 'Alabama',
+        Choice(
+          text: 'Alabama',
           extraInfoSingleItem: '1395 Lincoln Street',
           avatarSingleItem: CircleAvatar(
             backgroundColor: Colors.orange,
             child: Text('AL', style: TextStyle(color: Colors.white)),
           ),
         ),
-        SingleItemCategoryModel(nameSingleItem: 'Arkansas'),
-        SingleItemCategoryModel(nameSingleItem: 'Illonois'),
+        Choice(text: 'Arkansas'),
+        Choice(text: 'Illonois'),
       ],
     ),
     SingleCategoryModel(
       nameCategory: 'Pacific Time Zone',
       singleItemCategoryList: [
-        SingleItemCategoryModel(nameSingleItem: 'California'),
-        SingleItemCategoryModel(nameSingleItem: 'Nevada'),
-        SingleItemCategoryModel(nameSingleItem: 'Oregon'),
+        Choice(text: 'California'),
+        Choice(text: 'Nevada'),
+        Choice(text: 'Oregon'),
       ],
     ),
   ];
@@ -84,8 +84,8 @@ class _SimpleExampleAppState extends State<SimpleExampleApp> {
                   selectDataController: SelectDataController(
                     data: exampleData,
                     initSelected: const [
-                      SingleItemCategoryModel(
-                        nameSingleItem: 'Oregon',
+                      Choice(
+                        text: 'Oregon',
                       ),
                     ],
                   ),
@@ -95,9 +95,7 @@ class _SimpleExampleAppState extends State<SimpleExampleApp> {
                   selectDataController: SelectDataController(
                     data: exampleData,
                     isMultiSelect: false,
-                    initSelected: const [
-                      SingleItemCategoryModel(nameSingleItem: 'Arkansas')
-                    ],
+                    initSelected: const [Choice(text: 'Arkansas')],
                   ),
                   scrollController: scrollController,
                 ),
@@ -106,9 +104,9 @@ class _SimpleExampleAppState extends State<SimpleExampleApp> {
                   selectDataController: SelectDataController(
                     data: exampleData,
                     initSelected: const [
-                      SingleItemCategoryModel(nameSingleItem: 'Illonois'),
-                      SingleItemCategoryModel(nameSingleItem: 'California'),
-                      SingleItemCategoryModel(nameSingleItem: 'Alabama'),
+                      Choice(text: 'Illonois'),
+                      Choice(text: 'California'),
+                      Choice(text: 'Alabama'),
                     ],
                   ),
                   pillboxContentMultiSettings:

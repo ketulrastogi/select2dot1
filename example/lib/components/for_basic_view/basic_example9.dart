@@ -18,74 +18,74 @@ class BasicExample9 extends StatelessWidget {
             selectDataController: SelectDataController(
               data: ExampleData.exampleData2,
               initSelected: const [
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Alabama',
+                Choice(
+                  text: 'Alabama',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Arkansas',
+                Choice(
+                  text: 'Arkansas',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Illonois',
+                Choice(
+                  text: 'Illonois',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Iowa',
+                Choice(
+                  text: 'Iowa',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Kansas',
+                Choice(
+                  text: 'Kansas',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Kentucky',
+                Choice(
+                  text: 'Kentucky',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Louisiana',
+                Choice(
+                  text: 'Louisiana',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Minnesota',
+                Choice(
+                  text: 'Minnesota',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Mississippi',
+                Choice(
+                  text: 'Mississippi',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Missouri',
+                Choice(
+                  text: 'Missouri',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Oklahoma',
+                Choice(
+                  text: 'Oklahoma',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'South Dakota',
+                Choice(
+                  text: 'South Dakota',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Texas',
+                Choice(
+                  text: 'Texas',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Tennessee',
+                Choice(
+                  text: 'Tennessee',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Arizona',
+                Choice(
+                  text: 'Arizona',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Colorado',
+                Choice(
+                  text: 'Colorado',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Idaho',
+                Choice(
+                  text: 'Idaho',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Montana',
+                Choice(
+                  text: 'Montana',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Nebraska',
+                Choice(
+                  text: 'Nebraska',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'New Mexico',
+                Choice(
+                  text: 'New Mexico',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'North Dakota',
+                Choice(
+                  text: 'North Dakota',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Utah',
+                Choice(
+                  text: 'Utah',
                 ),
-                SingleItemCategoryModel(
-                  nameSingleItem: 'Wyoming',
+                Choice(
+                  text: 'Wyoming',
                 ),
               ],
             ),
